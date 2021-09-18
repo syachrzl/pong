@@ -14,10 +14,6 @@ public class BallControl : MonoBehaviour
 
     public Vector2 TrajectoryOrigin { get; internal set; }
        
-    //Speed
-    public Rigidbody rb;
-    public float ControleSpeed = 50f;
-    public float Speed = 100f;
 
     void ResetBall()
     {
@@ -48,26 +44,6 @@ public class BallControl : MonoBehaviour
             rigidBody2D.AddForce(new Vector2(xInitialForce, yRandomInitialForce));
         }
 
-        rb.AddForce(0, 0, Speed * Time.deltaTime);
-
-        float hAxis = Input.GetAxis("Horizontal");
-
-        Vector3 movement = new Vector3(hAxis, 0, 0) * ControleSpeed * Time.deltaTime;
-        rb.MovePosition(transform.position + movement);
-
-        if (transform.position.x > 6.5)
-        {
-            Vector3 pos = transform.position;
-            pos.x = 6.5f;
-            transform.position = pos;
-        }
-
-        if (transform.position.x < -6.5)
-        {
-            Vector3 pos = transform.position;
-            pos.x = -6.5f;
-            transform.position = pos;
-        }
     }
 
     void RestartGame()

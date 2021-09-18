@@ -146,6 +146,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xInitialForce: 50
   yInitialForce: 15
+  rb: {fileID: 0}
+  ControleSpeed: 50
+  Speed: 100
 --- !u!58 &228958633
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -476,6 +479,7 @@ MonoBehaviour:
   player1: {fileID: 1801534665}
   player2: {fileID: 687356248}
   ball: {fileID: 228958632}
+  trajectory: {fileID: 2098353963}
   maxScore: 5
 --- !u!1 &929795534
 GameObject:
@@ -924,11 +928,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2098353960}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b836177ec07643418bb2e8c716c2e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ball: {fileID: 228958632}
+  ballAtCollision: {fileID: 929795534}
 --- !u!1001 &4631151036535836105
 PrefabInstance:
   m_ObjectHideFlags: 0

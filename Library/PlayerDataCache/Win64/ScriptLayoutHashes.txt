@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/SYAH RIZAL FAUZY/Documents/PONG/Final/PONG.exe
+C:/Users/SYAH RIZAL FAUZY/Documents/DILO GAME ACADEMY/PONG/STANDALONE/PONG.exe
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?
